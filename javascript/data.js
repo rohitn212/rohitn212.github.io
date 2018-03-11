@@ -57,6 +57,7 @@ var info = {
         {
             name: 'Code Coverage Analysis',
             language: 'Java',
+            link: 'Code-Coverage-Analysis',
             description: [
                 'Generates basic code coverage reports using Jacoco which is then fed into MapReduce',
                 'Uses Apache Hadoop MapReduce to output a detailed, sorted code coverage report',
@@ -66,6 +67,7 @@ var info = {
         {
             name: 'Mutation Testing Tool',
             language: 'Java',
+            link: 'Mutation-Testing',
             description: [
                 'Validates whether a program’s tests detect potential runtime faults',
                 'Creates mutations of code by injecting faults into the bytecode with the help of Javassist',
@@ -75,6 +77,7 @@ var info = {
         {
             name: '8 tiles',
             language: 'Java',
+            link: '8-Tiles',
             description: [
                 'Java implementation of the 8 tiles game with a GUI, that generates a random 8-tile board',
                 'User can either manually solve the board or program can auto solve at any point using A* algorithm'
@@ -83,6 +86,7 @@ var info = {
         {
             name: 'CTA Ridership Analysis',
             language: 'C#, MySQL',
+            link: 'CTARidershipAnalysis',
             description: [
                 'Designed a program that displays detailed information about the CTA in an interactive GUI'
             ]
@@ -90,6 +94,7 @@ var info = {
         {
             name: 'Realm',
             language: 'C#, Unity3D',
+            link: 'Realm',
             description: [
                 'Created a full-fledged, third-person, puzzle game in a team of 3',
                 'Oversaw visual and sound effects, level design, puzzle design'
