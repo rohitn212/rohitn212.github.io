@@ -115,10 +115,7 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div class="my-auto" id="experience">
           <h2 class="mb-5">Experience</h2>
-
-
         </div>
-
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
@@ -137,8 +134,8 @@
           <div class="subheading mb-3">Programming Languages</div>
           <ul id="languages">
           </ul>
-          <div class="subheading mb-3">Tools</div>
-          <ul id="tools">   
+          <div class="subheading mb-3">Frameworks/Libraries</div>
+          <ul id="frameworksAndLibraries">   
           </ul>
         </div>
       </section>
@@ -186,7 +183,7 @@
         //$('#title').append();
       }
       function loadContactInfo(data) {
-        $('#contact').append('<div class="subheading mb-5">' + data['address']['unit'] + data['address']['street'] + ' · ' + data['address']['city'] + ', ' + data['address']['state'] + data['address']['zip'] + ' · ' + data['phone'] + ' · ' + ' <a href="mailto:' + data['email'] + '">' + data['email'] + '</a></div>');
+        $('#contact').append('<div class="subheading mb-5">' + data['phone'] + ' · ' + ' <a href="mailto:' + data['email'] + '">' + data['email'] + '</a></div>');
       }
       function loadSummary(data) {
         $('#summary').append('<p class="mb-5">' + data['summary'] + '</p>');  
@@ -205,27 +202,6 @@
             $(tag).append('<p>' + data + '</p>');
           }
       }
-      /*
-      function loadDescription(data, tag, employer, count) {
-        if ($.isArray(data)) {
-            console.log(data);
-            console.log(tag)
-            var new_tag = 'ul_' + employer + '_' + tag + '_' + count;
-            console.log(new_tag);
-            $('#' + tag).append('<ul id="' + new_tag + '">');
-            for (var i = 0; i < data.length; i++) {
-              $('#' + tag).append('<li>');
-              loadDescription(data[i], new_tag, employer, count);
-              $('#' + tag).append('<li>');
-            }
-            $('#' + tag).append('</ul>');
-          }
-          else {
-            console.log('heyo ' + data);
-            $('#' + tag).append('<p>' + data + '<p>');
-          }
-      }
-      */
       function loadExperience(data) {
         for (var i = 0; i < data.length; i++) {
           $('#experience').append('<div class="resume-item d-flex flex-column flex-md-row mb-5"> <div class="resume-content mr-auto"> <h3 class="mb-0">' + data[i]['employer'] + '</h3><div class="subheading mb-3">' + data[i]['position'] + '</div><div id="desc_' + i + '"></div></div><div class="resume-date text-md-right"><span class="text-primary">' + data[i]['start_date'] + ' - ' + data[i]['end_date'] + '</span></div>');
@@ -238,21 +214,21 @@
         }  
       }
       function loadEducation(data) {
-        $('#education-container').append('<div class="resume-item d-flex flex-column flex-md-row mb-5"><div class="resume-content mr-auto"><h3 class="mb-0">' + data['university_name'] + '</h3><div class="subheading mb-3">' + data['degree'] + '</div<div class="resume-date text-md-right"><span class="text-primary"> expected ' + data['graduation_date'] + '</span></div></div>');
+        $('#education-container').append('<div class="resume-item d-flex flex-column flex-md-row mb-5"><div class="resume-content mr-auto"><h3 class="mb-0">' + data['university_name'] + '</h3><div class="subheading mb-3">' + data['degree'] + '</div><div class="resume-date text-md-right"><span class="text-primary"> expected ' + data['graduation_date'] + '</span></div>');
         loadCoursework(data['coursework']);
       }
       function loadSkills(data) {
         loadLanguages(data['languages']);
-        loadTools(data['tools']);
+        loadFrameworksAndLibraries(data['frameworksAndLibraries']);
       }
       function loadLanguages(data) {
         for (var i = 0; i < data.length; i++) {
           $('#languages').append('<li>' + data[i] + '</li>');  
         }    
       }
-      function loadTools(data) {
+      function loadFrameworksAndLibraries(data) {
         for (var i = 0; i < data.length; i++) {
-          $('#tools').append('<li>' + data[i] + '</li>');  
+          $('#frameworksAndLibraries').append('<li>' + data[i] + '</li>');  
         }  
       }
       function loadProjects(data) {

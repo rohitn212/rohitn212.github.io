@@ -4,16 +4,9 @@ var info = {
         first: 'Rohit',
         last: 'Nambiar'
         },
-        address: {
-            unit: '1429',
-            street: 'W Lexington Street',
-            city: 'Chicago',
-            state: 'IL',
-            zip: '60607'
-        },
         email: 'rohit43212@gmail.com',
         phone: '(312) 479-1296',
-        summary: 'I am a senior majoring in Computer Science at University of Illinois at Chicago (UIC). I am interested in backend programming and technologies that will be relevant in the future.'
+        summary: 'I am an international senior completing a Bachelor in Computer Science at University of Illinois at Chicago (UIC). I am interested in fullstack and backend programming.'
     },
     links: {
         linkedIn: 'rohit-nambiar',
@@ -23,28 +16,38 @@ var info = {
         university_name: 'University of Illinois at Chicago (UIC)',
         degree: 'Bachelor of Science in Computer Science',
         graduation_date: 'December 2018',
-        coursework: ['Object Oriented Programming', 'Cloud Computing', 'Software Engineering', 'Video Game Design']
+        coursework: ['Computer Algorithms', 'Software Engineering', 'Object Oriented Programming', 'Cloud Computing', 'Computer Networking', 'Video Game Design']
     },
     skills: {
-        languages: ['Java', 'Python', 'Go', 'C++', 'HTML', 'CSS', 'jQuery', 'JavaScript', 'MySQL', 'C#', 'C'],
-        tools: ['Android Studio', 'Unity3D', 'SQL Server', 'Gradle', 'SBT', 'Jacoco', 'AWS', 'Docker', 'JIRA', 'Jenkins', 'Git']
+        languages: ['Java', 'C#', 'MySQL', 'Python', 'JavaScript', 'HTML', 'CSS', 'Go', 'C++', 'C'],
+        frameworksAndLibraries: ['MVC', '.Net', 'LINQ', 'REST', 'Entity Framework', 'Dapper', 'jQuery', 'React', 'Redux', 'Node.js']
     },
     experience: [
         {
+          employer: 'Spreetail',
+          location: 'Lincoln, Nebraska',
+          position: 'Software Engineering Intern (Full Stack)',
+          start_date: 'May 2018',
+          end_date: 'August 2018',
+          description: [
+              ['Provided web features and support to business analysts and account managers', 'Designed and implemented the backend API for a new self-contained service that manages orders', 'Communicated with stakeholders to update the new item order process following marketplace changes', 
+              'Created prototypes to test potential features and implemented them as new services in production', 'Improved runtime of business-oriented software services by optimizing performance of SQL queries']
+          ]
+        },
+        {
             employer: 'Blue Apron', 
             location: 'New York, New York', 
-            position: 'Software Engineering Intern', 
+            position: 'Software Engineering Intern (Backend)', 
             start_date: 'June 2017', 
             end_date: 'August 2017',
             description: [
-                'Developer Systems', ['Worked extensively on the Go-based command line tool for Blue Apron', 'Built on the custom Blue Apron build and configuration system', 'Wrote a bot that regulates work requests submitted via Jira'],
-                'Site Reliability Engineering', ['Automated on-boarding and off-boarding process for employees', 'Created build pipelines for apps on Jenkins', 'Collected and transferred metrics from Traefik to DataDog']
+                ['Worked extensively on the Go-based command line tool for Blue Apron', 'Automated on-boarding and off-boarding process for employees', 'Helped make developers life easier by writing a Python bot that filtered Jira tickets', 'Built on the custom Blue Apron build and configuration system']
             ]
         },
         {
             employer: 'NT Global Solutions', 
             location: 'Cochin, India', 
-            position: 'Software Engineering Intern', 
+            position: 'Software Engineering Intern (Backend)', 
             start_date: 'June 2016', 
             end_date: 'August 2016',
             description: [
@@ -84,22 +87,23 @@ var info = {
             ]
         },
         {
+            name: 'Recursive DNS Resolver',
+            language: 'Python',
+            link: 'Recursive-DNS-Resolver',
+            description: [
+                'Produces a summary of DNS information given a domain name',
+                'Recursively queries DNS servers starting from root servers'
+            ]
+        },
+        {
             name: 'CTA Ridership Analysis',
             language: 'C#, MySQL',
             link: 'CTARidershipAnalysis',
             description: [
-                'Designed a program that displays detailed information about the CTA in an interactive GUI'
+                'Designed a program that displays detailed information about the CTA in an interactive GUI',
+                'Designed using N-tier architecture to separate business logic and data-access into layers'
             ]
-        },
-        {
-            name: 'Realm',
-            language: 'C#, Unity3D',
-            link: 'Realm',
-            description: [
-                'Created a full-fledged, third-person, puzzle game in a team of 3',
-                'Oversaw visual and sound effects, level design, puzzle design'
-            ]
-        },
+        }
     ]
 };
 
