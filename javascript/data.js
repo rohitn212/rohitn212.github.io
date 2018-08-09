@@ -20,7 +20,7 @@ var info = {
     },
     skills: {
         languages: ['Java', 'C#', 'MySQL', 'Python', 'JavaScript', 'HTML', 'CSS', 'Go', 'C++', 'C'],
-        frameworksAndLibraries: ['MVC', '.Net', 'LINQ', 'REST', 'Entity Framework', 'Dapper', 'jQuery', 'React', 'Redux', 'Node.js']
+        frameworksAndLibraries: ['MVC', '.Net', 'LINQ', 'REST', 'Entity Framework', 'Dapper', 'jQuery', 'React', 'Redux']
     },
     experience: [
         {
